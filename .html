@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="main-heading">My Image Gallery</h1>
+
+<!-- Filters -->
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('library')">Library</button>
+    <button onclick="filterImages('festival')">Festivals</button>
+    <button onclick="filterImages('rain')">Rain</button>
+    <button onclick="filterImages('food')">Food</button>
+    <button onclick="filterImages('nature')">Nature</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+
+    <!-- Library -->
+    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500" class="library">
+    
+    <!-- Festival -->
+    <img src="https://images.unsplash.com/photo-1601049676869-702ea24cfd58?w=500" class="festival">
+    
+    <!-- Rain -->
+    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=500" class="rain">
+    
+    <!-- Food -->
+    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=500" class="food">
+    
+    <!-- Nature -->
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500" class="nature">
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <button class="nav prev" onclick="prevImage()">❮</button>
+    <img id="lightbox-img">
+    <button class="nav next" onclick="nextImage()">❯</button>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
